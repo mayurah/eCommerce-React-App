@@ -34,7 +34,7 @@ Encryption for Mobile & Wireless App performing communication at different level
 * Run `react-native run-ios` or `react-native run-ios --simulator="iPhone 5"`
 * Run `react-native run-android`
 * diff index.ios.js index.android.js
-
+* Fix pull issues amongst contributors: `git branch --set-upstream-to=origin/master master && git pull`
 
 ## References
 
