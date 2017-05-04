@@ -12,6 +12,7 @@ import Tabs from 'react-native-tabs';
 
 
 export default class hw extends Component {
+// constructor / dynamic / variables
   constructor(props) {
     super(props);
 
@@ -20,6 +21,7 @@ export default class hw extends Component {
     };
   }
 
+// render / stricture / html like tags
   render() {
     const { page } = this.state;
     const tabberStyles = [styles.tabbar];
@@ -63,6 +65,8 @@ export default class hw extends Component {
   }
 }
 
+
+// Design / View / Style
 const styles = StyleSheet.create({
   container: {
     flex: 1,
