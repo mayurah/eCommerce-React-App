@@ -38,5 +38,7 @@ Encryption for Mobile & Wireless App performing communication at different level
 
 ## References
 
-
+* Getting Started: https://facebook.github.io/react-native/docs/getting-started.html
+* Downloading Xcode: https://developer.apple.com/download/
+* Downloading Android Studio: https://developer.android.com/studio/index.html
 * Tabs: https://differential.com/insights/sharing-code-between-android-and-ios-in-react-native/
