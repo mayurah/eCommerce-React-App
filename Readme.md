@@ -16,7 +16,6 @@ Encryption for Mobile & Wireless App performing communication at different level
   * Cross Platform
   * Maximum Code Reuse
   * Keep Configuration out of the Code
-  *
 * Deployment (CI/CD) via Github and npm/yaml
 * Installed Xcode and Android Studio with dependencies, SDK and emulator
 

@@ -6,9 +6,24 @@ import {
   StyleSheet,
   Text,
   View,
+  FlatList,
+  ListItem,
+  Image,
   Platform,
 } from 'react-native';
 import Tabs from 'react-native-tabs';
+
+// FUNCTIONS
+function status(response) {
+ if (response.status >= 200 && response.status < 300) {
+   return response
+ }
+ throw new Error(response.statusText)
+}
+
+function json(response) {
+ return response.json()
+}
 
 
 export default class hw extends Component {
@@ -17,7 +32,9 @@ export default class hw extends Component {
     super(props);
 
     this.state = {
-      page:'first'
+      page:'first',
+      // dataSource: ds.cloneWithRows(tweets.twitter_objects.tweets)
+      jsonData: ''
     };
   }
 
@@ -42,10 +59,10 @@ export default class hw extends Component {
             <Text name="third">[X]</Text>
         </Tabs>
 
-        <Text>CodeSharing App</Text>
-        <Text>{page}</Text>
 
-        <Text>Welcome to React Native</Text>
+        <Text>eCom App  &nbsp; &nbsp; |  &nbsp; &nbsp; {page}</Text>
+ 
+
 
         <Text style={styles.instructions}>
           Android {'\n'}
@@ -63,6 +80,22 @@ export default class hw extends Component {
       </View>
     )
   }
+
+  renderRow(rowData) {
+    var user = tweets.twitter_objects.users[rowData.user.id];
+    return(
+      <View style={styles.tweetContainer}>
+        <Image
+          style={{width: 50, height: 50}}
+          source={{uri: user.profile_image_url_https}}
+        />
+        <Text style={styles.tweet}>
+          {rowData.full_text}
+        </Text>
+      </View>
+    )
+  }
+
 }
 
 
