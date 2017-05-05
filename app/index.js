@@ -61,11 +61,11 @@ export default class hw extends Component {
 
 
         <Text>eCom App  &nbsp; &nbsp; |  &nbsp; &nbsp; {page}</Text>
- 
+
 
 
         <Text style={styles.instructions}>
-          Android {'\n'}
+        {'\n'}{'\n'}  Android {'\n'}
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu{'\n'}
       --{'\n'}
@@ -73,8 +73,10 @@ export default class hw extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
       {'\n'}
-          —{'\n'}
-         Jose is the man - Steve 🏈
+          —{'\n'} {'\n'}
+         Jose and Mayur, do a quick demo - Prof. Moskal 🏈
+
+         Hey, real quick
         </Text>
 
       </View>

@@ -34,6 +34,12 @@ Encryption for Mobile & Wireless App performing communication at different level
 * Run `react-native run-android`
 * diff index.ios.js index.android.js
 * Fix pull issues amongst contributors: `git branch --set-upstream-to=origin/master master && git pull`
+* React Native SDK Error on Android (macOS / OSX)
+```
+	# React Native Path Fix for Android in macOS
+	export ANDROID_HOME=/Users/mayur/Library/Android/sdk/
+	export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+```
 
 ## References
 
